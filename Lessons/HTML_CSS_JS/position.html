@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+    .navbar{
+        position: absolute;
+        width: 1800px;
+        background-color: black;
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 18px;
+        /* z-index: 1; */
+        z-index: 3;
+    }
+    .navbar ul li{
+        display: inline-block;
+        padding: 15px;
+    }
+    .container{
+        background-color: aqua;
+        height: 50vh;
+        width: 50vw;
+        margin: auto;
+        top: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    p{
+        text-align: center;
+        padding: 5px;
+        border: 2px solid red;
+        /* height: 2000px; */
+    }
+    .box1{
+        height: 200px;
+        width: 200px;
+        background-color: deeppink;
+        /* position: relative;
+        left: 766px;
+        top: -55px;
+        position: absolute;
+        position: fixed;
+        position: sticky; */
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    .box2{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(6, 71, 17);
+        /* position: relative; */
+    }
+    /* ul{
+        background-color: blueviolet;
+    } */
+    ul li{
+        list-style: square inside url('featured.png');
+    }
+</style>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About US</li>
+            <li>Contact US</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quo soluta molestiae enim minus veniam praesentium optio, possimus consequatur, numquam tenetur excepturi consectetur sit fuga, perferendis esse libero eum. Suscipit dolorum quasi sit neque?</p>
+        <div class="box1">
+            Hello
+        </div>
+        <div class="box2">
+            I am another box
+        </div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Mango</li>
+    </ul>
+</body>
+</html>
