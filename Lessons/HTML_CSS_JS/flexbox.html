@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .container{
+        background-color: coral;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        height: 60vh;
+        justify-content: center; 
+        align-items: center;
+        /* align-content: center; */
+    }
+    .box1{
+        height: 20vh;
+        /* width: 20vw; */
+        background-color: aquamarine;
+        border: 2px solid black;
+        /* float: left; */
+        /* order: 2; */
+        flex-grow: 1;
+    }
+    .box2{
+        height: 20vh;
+        /* width: 20vw; */
+        background-color: rgb(2, 67, 45);
+        border: 2px solid black;
+        /* align-self: flex-end; */
+        /* float: right; */
+        flex-grow: 1;
+        /* flex-shrink:1; */
+    }
+    .box3{
+        height: 20vh;
+        /* width: 20vw; */
+        background-color: rgb(214, 15, 154);
+        border: 2px solid black;
+        /* float: right; */
+        flex-shrink: 1;
+    }
+    .box4{
+        height: 20vh;
+        /* width: 20vw; */
+        background-color: rgb(12, 75, 184);
+        border: 2px solid black;
+        /* float: right; */
+        flex-grow: 2;
+    }
+    header {
+        height: 10vh;
+        width: 100vw;
+        background-color: black;
+        color: gold;
+    }
+    header nav ul li{
+        display: inline-block;
+        padding: 25px;
+        font-size: 20px;
+    }
+    .container2{
+        background-color: aqua;
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left{
+        height: 40vh;
+        width: 30vw;
+        background-color: blueviolet;
+        border: 2px solid black;
+        /* float: left; */
+    }
+    .right{
+        height: 50vh;
+        width: 40vw;
+        background-color: rgb(14, 236, 62);
+        border: 2px solid black;
+        /* float: right; */
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">
+            I am box 1
+        </div><div class="box2">
+            I am box 2
+        </div><div class="box3">
+            I am box 3
+        </div><div class="box4">
+            I am box 4
+        </div>
+    </div>
+    <div class="container2">
+        <div class="left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum ipsum consectetur magni excepturi quod quia id, voluptate non, animi debitis repellendus, minus perspiciatis blanditiis temporibus. Ratione tempora asperiores id voluptatibus laudantium quam placeat numquam.
+        </div>
+        <div class="right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a provident impedit rem? Praesentium error rerum voluptatem esse totam voluptate quos, officia commodi ipsa debitis? Dicta aliquam quisquam soluta, accusamus impedit voluptatibus adipisci earum enim mollitia iusto dignissimos non delectus rerum aspernatur vitae possimus at sapiente ut praesentium itaque id odio nihil ipsum odit. Facilis.
+        </div>
+    </div>
+</body>
+</html>
