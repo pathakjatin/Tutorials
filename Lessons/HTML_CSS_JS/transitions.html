@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: red;
+            height: 50vh;
+        }
+        .box1{
+            border: 2px solid black;
+            display: inline-block;
+            /* transform:translate(955px,20px) rotate(15deg); */
+            /* transform-origin: 0; */
+            /* transform: scale(5,5); */
+            /* transform: skew(10deg,12deg); */
+            /* transform: rotateX(30deg);
+            transform: rotateY(30deg); */
+            /* transform: rotateZ(30deg); */
+        }
+        img:hover{
+            width: 650px;
+            /* height: 350px; */
+        }
+        img{
+            /* transition-property: width;
+            /* transition-property: height; */
+            /* transition-duration: 1.0s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;  */
+            transition: width 1.0 ease-in-out 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img id="myimg" src="forest.jpg" alt="" width="450px" height="260px">
+            <button id="btn">Toggle</button>
+        </div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+<script>
+    btn.addEventListener("click" ,()=>{
+        myimg.style.width="650px";
+        // myimg.style.height="350px";
+    })
+</script>
+</html>
