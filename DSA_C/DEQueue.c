@@ -1,3 +1,4 @@
+// Double ended Queue
 #include <stdio.h>
 // #include <conio.h>
 #define MAXSIZE 10
