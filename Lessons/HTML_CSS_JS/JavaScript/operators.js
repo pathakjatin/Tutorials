@@ -1,0 +1,16 @@
+a=10;
+b=3;
+console.log("a=",a);
+console.log("a++=",a++);
+console.log("a=",a);
+console.log("++a=",++a);
+console.log("a=",a);
+console.log("--a=",--a);
+console.log("a=",a);
+console.log("a--=",a--);
+console.log("a=",a);
+console.log("a/b=",a/b);
+console.log("a%b=",a%b);
+console.log(a>b && a==10);
+console.log(a<b || a==10);
+console.log(a<b || a==1);
