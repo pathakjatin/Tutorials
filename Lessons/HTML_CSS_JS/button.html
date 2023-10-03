@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+            padding: 30px;
+        }
+        .navbar ul li{
+            display: inline-block;
+            padding: 0px 10px 0px 10px;
+            font-size: 22px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        button{
+            background-color: black;
+            padding: 0px 8px;
+            color: white;
+            border: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+        button::after{
+            content: "";
+            display: block;
+            background-color: red;
+            height: 50px;
+            width: 100%;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            
+        }
+        button:hover::after{
+            transform-origin:left;
+            transform: scaleX(1);
+        }
+        /* button{
+            background-color: black;
+            padding: 0px 8px;
+            color: white;
+            border: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+        button::after{
+            content: "";
+            display: block;
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            transform: scale(0);
+            transition: transform 0.3s ease;
+        }
+        button:hover::after{
+            transform-origin:left;
+            transform: scale(1);
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <button><li>Home</li></button>
+                <button><li>About Me</li></button>
+                <button class="button-contact"><li>Contact Me</li></button>
+                <button><li>Demo</li></button>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <h1>Button underline animation</h1>
+    </div>
+</body>
+</html>
