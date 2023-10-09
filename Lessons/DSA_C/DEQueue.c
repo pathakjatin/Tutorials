@@ -60,7 +60,7 @@ void addrear(){
 }
 void addfront(){
     int val;
-    if (front==0)
+    if (front<=MAXSIZE-1)
     {
         printf("cannot insert from front\n");
     }
