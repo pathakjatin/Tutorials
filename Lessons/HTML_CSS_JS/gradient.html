@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .gradient{
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        #grad1{
+                background: linear-gradient(45deg,#fbe4d8 0%, #dfb6b2 20% , #854f6c 40%, #522b5b 60% , #2b124c 80%, #190019 100%);
+            }
+        #grad2{
+            background: linear-gradient(45deg,#29d461 0%, #6da560 20% , #0f969c 40%, #0c7075 60% , #072e33 80%, #05161a 100%);
+            }
+        #grad3{
+            background: linear-gradient(45deg,#f4e7fb 0%, #f3dcdc 20% , #f5bcba 40%, #e3aadd 60% , #c8a8e9 80%, #c3c7f3 100%);;
+        }
+        #grad4{
+            background: linear-gradient(45deg,#d6ccc2 0%, #ded6ce 20% , #e5ded8 40%, #eeeae6 60% , #f5ebe0 80%, #e3d5ca 100%);;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gradients</h1>
+    </header>
+    <div class="container">
+        <div class="gradient" id="grad1"></div>
+        <div class="gradient" id="grad2"></div>
+        <div class="gradient" id="grad3"></div>
+        <div class="gradient" id="grad4"></div>
+    </div>
+</body>
+</html>
