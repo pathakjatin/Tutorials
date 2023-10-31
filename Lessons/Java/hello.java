@@ -15,6 +15,7 @@ public class hello {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Hello!Enter a number:");
     int x = scanner.nextInt();
+    scanner.close();
     factorial res=new factorial();
     int result=res.fact(x);
     System.out.println(result);
