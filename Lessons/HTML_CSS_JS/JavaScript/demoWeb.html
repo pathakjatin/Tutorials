@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            filter: opacity(0.8);
+        }
+        header{
+            background-color: black;
+            color: antiquewhite;
+        }
+        .navbar{
+            list-style: none;
+            display: flex;
+            padding: 25px;
+            font-size: 20px;
+        }
+        li{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Element only Navigation</h1>
+    <script>
+        const changeBg=()=>{
+            document.body.firstElementChild.style.background="yellow"
+            document.getElementsByClassName("navbar")[0].style.color="black";
+        }
+        let b = document.body;
+        console.log("First child of b is: ", b.firstChild);
+        console.log("First element of b is: ", b.firstElementChild);
+        console.log("Previous element sibling of b is: ", b.previousElementSibling);
+        console.log("Next element sibling of b is: ", b.nextElementSibling);
+        console.log("last element child of b is: ", b.lastElementChild);
+    </script>
+</body>
+</html>
