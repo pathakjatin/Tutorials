@@ -20,7 +20,7 @@ public class towerOfHanoi {
 
     }
     public static void main(String[] args) {
-        int n=0;
+        int n=3;
         tower(n, "S", "H", "D");
     }
 }
