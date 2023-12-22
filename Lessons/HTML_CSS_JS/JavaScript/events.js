@@ -49,3 +49,38 @@ mode.addEventListener("click",()=>{
     }
     console.log(currentMode);
 })
+//-----------------------------------------------------------------------------------//
+//objects and prototype
+let employee ={
+    calculateTax(){
+        console.log("Tax rate is 10%");
+    }
+};
+let ahaan ={
+    salary:500000,
+};
+// setting a prototype
+ahann.__proto__ = employee;
+//----------------------------------------------------------------------------------//
+classes
+class Toyota{
+    constructor(){
+        console.log("creating object");
+    }
+    start(){
+        console.log("start");
+    }
+    stop(){
+        console.log("stop");
+    }
+    
+}
+let myObj = new Toyota();
+console.log(myObj);
+class Parent{
+    hello(){
+        console.log("hello");
+    }
+}
+class Child extends Parent{}
+let obj = new Child();
