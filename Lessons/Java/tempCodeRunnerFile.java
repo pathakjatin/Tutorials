@@ -1,1 +1,0 @@
-list.addFirst("1");
