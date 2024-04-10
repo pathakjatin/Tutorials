@@ -1,4 +1,4 @@
-public class stackUsingArray {
+public class stackUsingLinkedList {
     static class Node {
         int data;
         Node next;
