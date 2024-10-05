@@ -11,6 +11,6 @@ class Solution {
                     newArray[j] = count; 
                 }
         }  
-        return newArray[]
+        return newArray[];
     }
 }

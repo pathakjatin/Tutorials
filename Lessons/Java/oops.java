@@ -21,12 +21,12 @@ class Student{
     public void printInfo(String name, int age){
         System.out.println(name + " " + age);
     }
-    constructor
+    //constructor
     Student(String name, int age){
         this.name = name;
         this.age = age;
     }
-    copy constructor
+    //copy constructor
     Student(Student s2){
         this.name = s2.name;
         this.age = s2.age;
