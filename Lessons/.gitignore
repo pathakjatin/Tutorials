@@ -2,3 +2,5 @@ Python
 HTML_CSS_JS
 *.class
 *.py
+*.exe
+.cph
