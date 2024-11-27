@@ -8,6 +8,7 @@ public class selectionSort {
         for (int i = 0; i < array.length; i++) {
             array[i] = sc.nextInt();
         }
+        sc.close();
     }
 
     public static void sort(int array[]) {
@@ -40,7 +41,9 @@ public class selectionSort {
         sort(array);
         System.out.println("The sorted array is: ");
         printArray(array);
+        sc.close();
     }
+    
 }
 // Time Complexity
 // for i till n
