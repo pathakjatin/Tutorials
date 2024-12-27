@@ -4,3 +4,4 @@ HTML_CSS_JS
 *.py
 *.exe
 .cph
+*.log

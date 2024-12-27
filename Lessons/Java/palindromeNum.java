@@ -1,5 +1,5 @@
 public class palindromeNum {
-    public static boolean isPalindrome(int x){
+    public static int isPalindrome(int x){
         int originalNumber = x;
         int reversedNumber = 0;
 
@@ -9,11 +9,11 @@ public class palindromeNum {
             x /= 10;
         }
 
-        return originalNumber == reversedNumber;
+        return reversedNumber;
     }
     public static void main(String[] args) {
-        int x = 1223221;
-        boolean res = isPalindrome(x);
+        int x = -1223221;
+        int res = isPalindrome(x);
         System.out.println(res);
     }
 }
